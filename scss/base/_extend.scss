@@ -1,0 +1,12 @@
+
+%grid{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "img2 img3 img4" 
+    "img5 img6 .";
+    gap: 7em;
+    justify-content: space-evenly;
+}

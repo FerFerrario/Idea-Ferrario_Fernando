@@ -1,0 +1,178 @@
+.Musica {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img2 img3 img4"  "img5 img6 .";
+  gap: 7em;
+  justify-content: space-evenly; }
+
+body {
+  background-color: rgba(31, 30, 30, 0.987); }
+  body header nav div .logo {
+    font-size: 3em; }
+  body header nav div div ul li a {
+    color: aliceblue;
+    font-size: 1.2em;
+    text-decoration: none; }
+  body main .parrafo {
+    color: aliceblue;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 2em; }
+  body main .carrusel {
+    height: 30em;
+    width: 98%;
+    max-width: 800px;
+    margin: 2em; }
+  body main .carrusel img {
+    height: 30em;
+    width: 90%;
+    max-width: 800px;
+    object-fit: cover; }
+  body footer {
+    height: 4em;
+    background-color: black; }
+    body footer .iconos {
+      font-size: 1.5em;
+      text-align: center; }
+    body footer .iconos a {
+      margin-top: 2em;
+      color: aliceblue; }
+    body footer .home {
+      margin-left: 1em; }
+    body footer .home a {
+      color: aliceblue; }
+
+/* shows */
+.show main .parrafo2 {
+  background: url(../img/Calvin-Harris-Photo-by-Al-Powers.jpg.crdownload);
+  background-color: rgba(0, 0, 0, 0.401);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: aliceblue;
+  font-size: 1.1em;
+  margin: 1em;
+  padding: 1.5em; }
+
+.show main .parrafo2 a {
+  background-color: #542b69;
+  border-radius: 0.2em;
+  border-style: groove;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.2em;
+  margin: 0.5em; }
+
+/* discografia */
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+.img4 {
+  grid-area: img4; }
+
+.img5 {
+  grid-area: img5; }
+
+.img6 {
+  grid-area: img6; }
+
+/* simples */
+.Simples {
+  margin: 3em 1em;
+  display: flex;
+  justify-content: center;
+  gap: 4em; }
+
+/* contacto */
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.791);
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin: 1em; }
+
+form h3 {
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 15px; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 15px; }
+
+#boton {
+  background-color: #542b69;
+  color: aliceblue;
+  cursor: pointer; }
+
+#boton:hover {
+  background-color: #8d40b3;
+  transform: scale(0.98); }
+
+@media (min-width: 768px) and (max-width: 1218px) {
+  .parrafo {
+    color: aliceblue;
+    font-size: 1em; }
+  .parrafo2 {
+    background: url(../img/Calvin-Harris-Photo-by-Al-Powers.jpg.crdownload);
+    background-color: rgba(0, 0, 0, 0.401);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: aliceblue;
+    font-size: 0.7em;
+    margin: 1em; }
+  footer {
+    margin-top: 5em; }
+  .Musica {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img2 img3" "img4 img5" "img6 ."; }
+  .Simples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em; } }
+
+@media screen and (max-width: 767px) {
+  .parrafo2 {
+    background: url(../img/Calvin-Harris-Photo-by-Al-Powers.jpg.crdownload);
+    background-color: rgba(0, 0, 0, 0.401);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: aliceblue;
+    font-size: 0.3em;
+    margin: 1em; }
+  .Musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em; }
+  .Simples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em; } }
