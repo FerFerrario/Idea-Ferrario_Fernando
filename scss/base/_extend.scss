@@ -9,4 +9,67 @@
     "img5 img6 .";
     gap: 7em;
     justify-content: space-evenly;
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    
+    .img5{
+        grid-area: img5;
+    }
+    .img6{
+        grid-area: img6;
+    }
+}
+
+%simples{
+    margin: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+%contacto{
+    form{
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        background-color: nth($colores, 5);
+        padding: 10px 20px;
+        border-radius: 7px;
+        margin: 1em;
+    }
+    form h3{
+        color: nth($colores, 3);
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;;
+        font-size: 15px
+        }
+    #boton{
+        background-color:  nth($colores, 4);    
+        color: aliceblue;
+        cursor: pointer;
+        }
+    #boton:hover{
+        background-color:  nth($colores, 6);
+        transform: scale(0.98);
+        }    
 }
