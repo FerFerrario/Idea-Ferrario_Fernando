@@ -18,9 +18,10 @@
     grid-area: img6; }
 
 .Simples {
-  margin: 3em 1em;
+  margin: 2em 1em;
+  gap: 5em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center; }
 
 .contacto form {
