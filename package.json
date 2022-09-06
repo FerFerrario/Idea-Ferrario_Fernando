@@ -243,5 +243,13 @@
     "uri-js": "^4.4.1",
     "yargs": "^17.5.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerFerrario/Idea-Ferrario_Fernando.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FerFerrario/Idea-Ferrario_Fernando/issues"
+  },
+  "homepage": "https://github.com/FerFerrario/Idea-Ferrario_Fernando#readme",
   "description": ""
 }
