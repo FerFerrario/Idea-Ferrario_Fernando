@@ -61,13 +61,8 @@
   background-color: #8d40b3;
   transform: scale(0.98); }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
-  background-color: rgba(121, 117, 117, 0.564); }
+  background-color: #46494c; }
   body header nav div .logo {
     font-size: 2em; }
   body header nav div div ul li a {
