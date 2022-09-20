@@ -1,6 +1,11 @@
 @import "base/listas";
 @import "base/mixin";
 @import "base/extend";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     background-color: nth($colores, 2);
@@ -8,7 +13,7 @@ body{
         nav{
             div {
                 .logo{
-                font-size: 3em;
+                font-size: 2em;
                 }
             }
             div{
@@ -25,11 +30,16 @@ body{
         }
     }
     main{
+        h1{
+            color: nth($colores, 3);
+            text-align: center;
+            margin: 1em;
+        }
         .parrafo{
             color: nth($colores, 3);
-            font-size: 1.3em;
+            font-size: 1em;
             text-align: center;
-            margin: 2em;
+            margin: 1em 6em;
         }
         .carrusel{
             height: 30em;
@@ -66,38 +76,86 @@ body{
 /* shows */
 .show{
     main{
+        h1{
+            color: nth($colores, 3);
+            text-align: center;
+            font-size: 2em;
+            text-decoration: none;
+            margin: 0.5em 0em;
+        }
         .parrafo2{
             background: url(../img/Calvin-Harris-Photo-by-Al-Powers.jpg.crdownload);
-            background-color: rgba(0, 0, 0, 0.401);
+            background-color: rgba(0, 0, 0, 0.505);
             background-blend-mode: soft-light;
             background-repeat: no-repeat;
             background-size: cover;
             object-fit: cover;
             color: nth($colores, 3);
             font-size: 1.1em;
-            margin: 1em;
+            margin: 2em;
             padding: 1.5em;
         }
         .parrafo2 a{
             @include box-model;
         }
+        .parrafo3{
+            color: nth($colores, 3);
+            font-size: 1.2em;
+            text-align: center;
+            margin: 1em 3em;
+        }
     }
 }
 /* discografia */
+.discografia h1{
+    color: nth($colores, 3);
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+.discografia .parrafo4{
+    color: nth($colores, 3);
+    text-align: center;
+}
 
 .Musica{
     @extend %grid;
 }
 
+
 /* simples */
 .Simples{
     @extend %simples;
 }
+.container section{
+    margin-top: 1em;
+    text-align: center;
+}
+.container section h1{
+    color: nth($colores, 3);
+    font-size: 2em;
+}
 
 /* contacto */
 .contacto{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     @extend %contacto;
 }
+.row h1{
+    color: nth($colores, 3);
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+.contacto .parrafo5{
+    color: nth($colores, 3);
+    text-align: center;
+    margin: 1em 3em;
+    font-size: 1.6em;
+}
+
 
 @media (min-width: 768px) and (max-width: 1218px){
 
@@ -137,6 +195,16 @@ body{
         justify-content: center;
         margin-left: 2em;
     }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto .parrafo5{
+        color: nth($colores, 3);
+        text-align: center;
+        margin: 1em 3em;
+        font-size: 1.2em;
+    }
 }
 @media screen and (max-width: 767px){
     .parrafo2{
@@ -148,7 +216,7 @@ body{
         object-fit: cover;
         color: nth($colores, 3);
         font-size: 0.3em;
-        margin: 1em;
+        margin: 1.2em;
     }
     .Musica{
         display: flex;
@@ -163,5 +231,15 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto .parrafo5{
+        color: nth($colores, 3);
+        text-align: center;
+        margin: 1em 3em;
+        font-size: 1em;
     }
 }
