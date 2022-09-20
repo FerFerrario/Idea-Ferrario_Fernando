@@ -34,7 +34,7 @@ body{
             color: nth($colores, 3);
             font-size: 1em;
             text-align: center;
-            margin: 1em 6em;
+            margin: 1em;
         }
         .carrusel{
             height: 30em;
@@ -86,7 +86,7 @@ body{
             background-size: cover;
             object-fit: cover;
             color: nth($colores, 3);
-            font-size: 1.1em;
+            font-size: 1em;
             margin: 2em;
             padding: 1.5em;
         }
@@ -95,7 +95,7 @@ body{
         }
         .parrafo3{
             color: nth($colores, 3);
-            font-size: 1.2em;
+            font-size: 1em;
             text-align: center;
             margin: 1em 3em;
         }
@@ -111,6 +111,7 @@ body{
 .discografia .parrafo4{
     color: nth($colores, 3);
     text-align: center;
+    font-size: 1em;
 }
 
 .Musica{
@@ -125,6 +126,10 @@ body{
 .container section{
     margin-top: 1em;
     text-align: center;
+}
+.container section p{
+    color: nth($colores, 3);
+    font-size: 1em;
 }
 .container section h1{
     color: nth($colores, 3);

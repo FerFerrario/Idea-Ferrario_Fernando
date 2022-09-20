@@ -77,7 +77,7 @@ body {
     color: white;
     font-size: 1em;
     text-align: center;
-    margin: 1em 6em; }
+    margin: 1em; }
   body main .carrusel {
     height: 30em;
     width: 98%;
@@ -118,7 +118,7 @@ body {
   background-size: cover;
   object-fit: cover;
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 2em;
   padding: 1.5em; }
 
@@ -133,7 +133,7 @@ body {
 
 .show main .parrafo3 {
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   margin: 1em 3em; }
 
@@ -146,12 +146,17 @@ body {
 
 .discografia .parrafo4 {
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 1em; }
 
 /* simples */
 .container section {
   margin-top: 1em;
   text-align: center; }
+
+.container section p {
+  color: white;
+  font-size: 1em; }
 
 .container section h1 {
   color: white;
